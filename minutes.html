@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meeting Minutes — Sweet's Borden Lake Association</title>
+  <meta name="description" content="Meeting minutes from Sweet's Borden Lake Association board meetings.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">Sweet's Borden Lake</a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="minutes.html">Minutes</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Meeting Minutes</h1>
+      <p>Official records of board meetings, sorted by most recent first.</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="page-content">
+    <div class="container">
+
+      <div class="minutes-filter">
+        <label for="year-filter">Filter by year:</label>
+        <select id="year-filter">
+          <option value="">All years</option>
+        </select>
+        <button onclick="window.print()" style="margin-left:auto;padding:6px 14px;border:1px solid var(--border);border-radius:var(--radius);background:var(--white);cursor:pointer;font-size:0.88rem">
+          &#x1F5A8; Print
+        </button>
+      </div>
+
+      <div id="minutes-list">
+        <p class="loading">Loading meeting minutes&hellip;</p>
+      </div>
+
+      <p style="margin-top:40px; font-size:0.9rem; color:var(--stone)">
+        Minutes are uploaded to a shared Google Drive folder.
+        Board members can add new minutes by saving a PDF or Google Doc to the Meeting Minutes folder.
+      </p>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-brand">Sweet's Borden Lake Association</span>
+        <ul class="footer-links">
+          <li><a href="news.html">News</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="minutes.html">Minutes</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <p class="footer-copy">
+        &copy; <span id="year"></span> Sweet's Borden Lake Association &mdash; Garrison, Minnesota
+      </p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

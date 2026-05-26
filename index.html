@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet's Borden Lake Association — Garrison, MN</title>
+  <meta name="description" content="The official website of Sweet's Borden Lake Association in Garrison, Minnesota. News, events, meeting minutes, and community information.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">Sweet's Borden Lake</a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="minutes.html">Minutes</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" aria-label="Welcome banner">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-content">
+      <h1>Sweet's Borden Lake Association</h1>
+      <p class="hero-subtitle">Garrison, Minnesota &mdash; Caring for our lake and community since the beginning</p>
+    </div>
+  </section>
+
+  <!-- Quick Links -->
+  <section class="quick-links">
+    <div class="container">
+      <h2>What are you looking for?</h2>
+      <div class="quick-grid">
+        <a href="news.html" class="quick-card">
+          <span class="quick-icon" aria-hidden="true">📰</span>
+          <span class="quick-label">News &amp; Announcements</span>
+        </a>
+        <a href="events.html" class="quick-card">
+          <span class="quick-icon" aria-hidden="true">📅</span>
+          <span class="quick-label">Events Calendar</span>
+        </a>
+        <a href="minutes.html" class="quick-card">
+          <span class="quick-icon" aria-hidden="true">📋</span>
+          <span class="quick-label">Meeting Minutes</span>
+        </a>
+        <a href="history.html" class="quick-card">
+          <span class="quick-icon" aria-hidden="true">🏞️</span>
+          <span class="quick-label">Lake History</span>
+        </a>
+        <a href="about.html" class="quick-card">
+          <span class="quick-icon" aria-hidden="true">👥</span>
+          <span class="quick-label">About &amp; Contact</span>
+        </a>
+        <a href="about.html#contact" class="quick-card">
+          <span class="quick-icon" aria-hidden="true">✉️</span>
+          <span class="quick-label">Contact Us</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="home-sections">
+    <div class="container">
+      <div class="home-grid">
+
+        <!-- Latest News -->
+        <section class="home-news">
+          <p class="section-label">From the Board</p>
+          <h2>Latest News</h2>
+          <div id="news-snippet">
+            <p class="news-loading">Loading latest news&hellip;</p>
+          </div>
+        </section>
+
+        <!-- Sidebar -->
+        <aside>
+          <div class="sidebar-box">
+            <h3>&#x1F4CD; About the Lake</h3>
+            <p>
+              Sweet's Borden Lake is a beautiful lake located in Garrison, Minnesota.
+              Our association works together to protect the lake's water quality,
+              maintain shoreline health, and build community among lakeside neighbors.
+            </p>
+          </div>
+
+          <div class="sidebar-box" style="margin-top:20px">
+            <h3>&#x1F4CC; Quick Contact</h3>
+            <p>
+              Questions or concerns? Reach the board at
+              <a href="mailto:sweetsbordenlake@gmail.com">sweetsbordenlake@gmail.com</a>.
+            </p>
+            <p style="margin-top:10px">
+              <a href="about.html">Meet the board &rarr;</a>
+            </p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-brand">Sweet's Borden Lake Association</span>
+        <ul class="footer-links">
+          <li><a href="news.html">News</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="minutes.html">Minutes</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <p class="footer-copy">
+        &copy; <span id="year"></span> Sweet's Borden Lake Association &mdash; Garrison, Minnesota
+      </p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
